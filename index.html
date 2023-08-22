@@ -12,9 +12,9 @@
         <a href="index.html" class="logo">Kush Patel</a>
         <nav>
           <ul>
-            <li><a href="#" id="scrollButton"> My Work</a></li>
             <li><a href="#" id="scrollButton1">My Skills</a></li>
-            <li><a href="hire.html">Hire Me</a></li>
+            <li><a href="#" id="scrollButton"> Education</a></li>
+            <li><a href="hire.html">Contact Me</a></li>
           </ul>
         </nav>
       </header>
@@ -274,6 +274,22 @@
       </div>
 
     </section>
+
+    <section id="education12" class="education">
+        <div class="portfolio-container transition3">
+        <div class="portfolio-left">
+          <div class="inner">
+            <p class="subtitle">Education</p>
+
+            <p class="featured-title">Oregon State University Honors College </p>
+            <p class="featured-desc">
+            <b>Major:</b> Computer Science <br> <b>Graduation:</b> June 2026 <br>
+            </p>
+          </div>
+        </div>
+        <img id="beaver-image" src="images/beaver.png" alt="Beaver Image" />
+      </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 
@@ -330,7 +346,7 @@
 
         document.getElementById('scrollButton').addEventListener('click', function(e) {
             e.preventDefault(); // Prevent the default behavior of the anchor tag
-            const featuredSection = document.querySelector('.featured');
+            const featuredSection = document.querySelector('.education');
             // Use smooth scrolling behavior
             featuredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });

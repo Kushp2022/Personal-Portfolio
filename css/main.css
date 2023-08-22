@@ -18,7 +18,15 @@ a {
 img {
   width: 100%;
 }
+#beaver-image{
+  width: 20em;
+  margin-left: 0em;
+  border-radius: 2em;
+}
+#education12{
+  background-color: #00F7FF;
 
+}
 .nav-container {
   background: #6700EE;
 }
@@ -164,6 +172,9 @@ section {
   .portfolio {
     text-align: left;
   }
+#beaver-image {
+  margin-left: 1.5em;
+}
   .featured,
   .portfolio-container {
     display: grid;
@@ -199,7 +210,14 @@ section {
   .hero {
     height: 90vh;
   }
-  .nav-container {
+  #beaver-image {
+    margin-left: 7em;
+  }
+  #education12 {
+    background-color: #00F7FF;
+    padding-bottom: 2em;
+  }
+.nav-container {
     display: grid;
     grid-template-columns: 66% auto;
     background: unset;
@@ -271,6 +289,12 @@ section {
   .hero .content {
     padding: 6em 8em 6em 10em;
   }
+  #education12 {
+    background-color: #00F7FF;
+    padding-bottom: 3em;
+    padding-top: 5em;
+  }
+    
 }
 @media only screen and (min-width: 1550px) {
   header {
@@ -284,6 +308,9 @@ section {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
+  }
+  #beaver-image {
+    margin-left: 2em;
   }
 }
 .circle {
