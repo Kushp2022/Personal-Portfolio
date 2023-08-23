@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 body {
   height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Poppins", arial;
 }
 
@@ -171,23 +171,45 @@ section {
     margin-left: 0em;
     padding: 0;
   }
+  .hero{
+    height: 100vh;
+    padding:0
+
+  }
 }
 @media screen and (max-width: 450px) {
   #form-info {
-    margin-left: -2.1em;
+    margin-left: 0em;
     padding: 0;
+  }
+  .hero {
+    height: 100vh;
+    padding: 0
   }
 }
 @media screen and (max-width: 400px) {
   #form-info {
-    margin-left: -4em;
+    margin-left: 0em;
     padding: 0;
+  }
+  .hero {
+    height: 100vh;
+  }
+  #hero-d{
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 350px) {
   #form-info {
     margin-left: -5.5em;
     padding: 0;
+  }
+  .hero {
+    height: 100vh;
+    padding: 0
+  }
+  #hero-d {
+    overflow-x: hidden;
   }
 }
 
