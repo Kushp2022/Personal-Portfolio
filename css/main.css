@@ -101,11 +101,7 @@ section {
   left: 0;
   z-index: -1;
 }
-#form-info{
-  margin-left: -6.6em;
-  padding: 0;
 
-}
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
@@ -169,6 +165,30 @@ section {
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
+}
+@media screen and (max-width: 500px) {
+  #form-info {
+    margin-left: 0em;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  #form-info {
+    margin-left: -2.1em;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  #form-info {
+    margin-left: -4em;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  #form-info {
+    margin-left: -5.5em;
+    padding: 0;
+  }
 }
 
 @media only screen and (min-width: 800px) {
