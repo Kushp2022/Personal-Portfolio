@@ -199,9 +199,9 @@ section {
     overflow-x: hidden;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 380px) {
   #form-info {
-    margin-left: -0.5em;
+    margin-left: -20px;
     padding: 0;
   }
   .hero {
