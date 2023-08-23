@@ -102,7 +102,9 @@ section {
   z-index: -1;
 }
 #form-info{
-  margin-left: -4em;
+  margin-left: -6.6em;
+  padding: 0;
+
 }
 .subtitle {
   text-transform: uppercase;
