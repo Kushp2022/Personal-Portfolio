@@ -198,6 +198,9 @@ section {
   #hero-d{
     overflow-x: hidden;
   }
+  .form-group {
+    width: 200px;
+  }
 }
 @media only screen and (max-width: 380px) {
   #form-info {
