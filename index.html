@@ -15,6 +15,7 @@
         <nav>
           <ul>
             <li><a href="#" id="scrollButton1">My Skills</a></li>
+            <li><a href="#" id="scrollButton2">Work Experiences</a></li>
             <li><a href="#" id="scrollButton"> Education</a></li>
             <li><a href="hire.html">Contact Me</a></li>
           </ul>
@@ -24,7 +25,7 @@
       <div class="social-header">
         <ul>
           <li>
-            <a href="https://drive.google.com/file/d/1tXIeCBZhrGSQsdbQGjniWCzCSGokL9iV/view?usp=drive_link"
+            <a href="https://drive.google.com/file/d/1IBP11iM4owf_FZirzKcQDJQu3x0GHM2u/view?usp=sharing"
               ><img
                 src="images/resume.png"
                 alt="resume"
@@ -215,7 +216,7 @@
             </div>
             <p class="skill-title">Backend Development</p>
             <p class="featured-desc skill-desc">
-              Python <br> Java <br> C# <br> MySQL <br>Flask <br> SQLAlchamy <br> Git
+              Python <br> Java <br> C# <br> MySQL <br> Flask <br> SQLAlchamy <br> Git <br> Node.js <br> C++ <br> C <br> 
             </p>
           </li>
           <li class="transition2">
@@ -224,7 +225,7 @@
             </div>
             <p class="skill-title">Frontend Development</p>
             <p class="featured-desc skill-desc">
-              JavaScript <br> HTML <br> CSS <br> React <br> Bootstrap <br> SCSS
+              JavaScript <br> HTML <br> CSS <br> React <br> Bootstrap <br> SCSS <br> TypeScript
             </p>
           </li>
           <li class="transition2">
@@ -233,7 +234,7 @@
             </div>
             <p class="skill-title">Full-Stack Integration</p>
             <p class="featured-desc skill-desc">
-              API Development <br> Data Serialization <br> Authentication <br> Debugging <br> Testing <br> Data Validation 
+              API Development <br> Data Serialization <br> Authentication <br> Debugging <br> Testing <br> Data Validation
             </p>
           </li>
         </ul>
@@ -243,29 +244,31 @@
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
-            <p class="subtitle">Project</p>
+            <p class="subtitle">Work-Experience</p>
 
-            <p class="featured-title">LearnTrack</p>
-            <p class="featured-desc">
-             LearnTrack is a web application I've developed, built with HTML, CSS, and JavaScript. This project features a dynamic calendar with a to-do list, allowing users to seamlessly manage events and tasks. Additionally, I've implemented a search functionality that fetches data from an external API, providing users with quick access to relevant information.
+            <p class="featured-title">AI/ML Research Assistant</p>
+             <p>Oregon State University (September 2023 - Current)</p>
+            <p class="featured-desc"> 
+              I'm engaged in diverse research projects at Oregon State University, diving into Reinforcement Learning (RL) to create a disinfecting robot using OpenAI Gym. Simultaneously, I'm utilizing RL to train a Fetch robot, honing its adaptability and skills. Additionally, I'm employing Machine Learning (ML) to study human behavior, aiming to enhance communication for robots assisting individuals with specific conditions.
             </p>
           </div>
         </div>
-        <a href="#"><img src="images/learnTrack.png" alt="Fretastic" /></a>
+        <a href="#"><img src="images/fetch.png" alt="Fretastic" /></a>
       </div>
 
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
-            <p class="subtitle">Project</p>
+            <p class="subtitle">Work-Experience</p>
 
-            <p class="featured-title">SmartEnroll </p>
+            <p class="featured-title"> Software Engineer Intern </p>
+            <p>Extendrum Technologies (May 2023 - August 2023)</p>
             <p class="featured-desc">
-           Smartenroll is a dynamic program I developed using Java to manage and organize student data efficiently. It employs advanced data structures to create an optimized system for storing and retrieving student information. With a user-friendly interface, it allows seamless input of student data, checks for duplicates, and provides instant access to results. Notably, it enables users to swiftly search for students by their unique identification numbers. The program runs continuously, ensuring a smooth and intelligent way to handle and access student records.
+          At Extendrum, I had a hands-on role in crafting plugins for Dynamic 365 using C# and the .NET framework. These plugins were all about enhancing user experiences, making operations smoother within Dynamic 365. Beyond that, I also had the chance to dive into web technologies like JavaScript, CSS, HTML, and React. Working on client websites, I updated features and integrated new ones, aiming for a sleeker and more user-friendly interface. It was a fantastic opportunity to blend coding skills with real-world improvements for our clients.
             </p>
           </div>
         </div>
-        <a href="#"><img src="images/javaGUI.png" alt="Fretastic" /></a>
+        <a href="#"><img src="images/Extendrum.png" alt="Fretastic" /></a>
       </div>
 
     </section>
@@ -278,7 +281,9 @@
 
             <p class="featured-title">Oregon State University Honors College </p>
             <p class="featured-desc">
-            <b>Major:</b> Computer Science <br> <b>Graduation:</b> June 2026 <br>
+            <b>Major:</b> Computer Science <br> 
+            <b>Graduation:</b> June 2026 <br>
+            <b>Certifications:</b> Microsoft Foundation C#  <br>
             </p>
           </div>
         </div>
@@ -348,6 +353,12 @@
         document.getElementById('scrollButton1').addEventListener('click', function(e) {
             e.preventDefault(); // Prevent the default behavior of the anchor tag
             const featuredSection = document.querySelector('.skills');
+            // Use smooth scrolling behavior
+            featuredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        document.getElementById('scrollButton2').addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent the default behavior of the anchor tag
+            const featuredSection = document.querySelector('.portfolio');
             // Use smooth scrolling behavior
             featuredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
